@@ -1,0 +1,5 @@
+Flask
+gunicorn
+psycopg2
+sqla-wrapper
+smartninja-redis
