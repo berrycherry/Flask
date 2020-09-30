@@ -3,3 +3,5 @@ gunicorn
 psycopg2
 sqla-wrapper
 smartninja-redis
+requests
+huey

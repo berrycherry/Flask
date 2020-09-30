@@ -30,6 +30,7 @@ def signup():
         username = request.form.get("username")
         password = request.form.get("password")
         repeat = request.form.get("repeat")
+        email = request.form.get("email")
 
         if password != repeat:
             return "Passwords don't match! Go back and try again."
@@ -38,7 +39,8 @@ def signup():
 
         user = User.create(
             username=username,
-            password_hash=password_hash
+            password_hash=password_hash,
+            email=email
         )
 
         # save user's session token into a cookie
