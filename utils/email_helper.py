@@ -7,9 +7,6 @@ def send_email(receiver_email, subject, text):
     sender_email = os.getenv("MY_SENDER_EMAIL")  # Your website's official email address
     api_key = os.getenv('SENDGRID_API_KEY')
 
-    sender_email = "elvira.newzealand@gmail.com"
-    api_key = "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"
-
     if not sender_email or not api_key:
         print("No env vars or no email address")
         return
